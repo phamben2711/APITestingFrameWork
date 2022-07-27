@@ -37,7 +37,7 @@ public class TestAPI3 {
 		SetURL(Endpoint); 
 		RequestSpecification httpRequest = RestAssured.given().auth().oauth2(tokenString); 
 		Response response = httpRequest.request(Method.GET, "");
-		System.out.println("Status received => " + response.getStatusLine()); 
+		System.out.println("Status received => " + response.getStatusLine());
 		System.out.println("Response=>" + response.prettyPrint());
 	   }
 }
